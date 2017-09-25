@@ -127,7 +127,7 @@ export class PieChartComponent extends BaseChartComponent {
     this.results.map(d => {
       let label = d.name;
       if (label.constructor.name === 'Date') {
-        label = label.toLocaleDateString();
+        // label = label.toLocaleDateString();
       } else {
         label = label.toLocaleString();
       }

@@ -115,7 +115,7 @@ export class CardSeriesComponent implements OnChanges {
       .map((d, index) => {
         let label = d.data.name;
         if (label && label.constructor.name === 'Date') {
-          label = label.toLocaleDateString();
+          // label = label.toLocaleDateString();
         } else {
           label = label ? label.toLocaleString() : label;
         }

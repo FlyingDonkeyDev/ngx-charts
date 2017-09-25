@@ -84,7 +84,7 @@ export class TreeMapComponent extends BaseChartComponent {
         let label = d.name;
 
         if (label.constructor.name === 'Date') {
-          label = label.toLocaleDateString();
+          // label = label.toLocaleDateString();
         } else {
           label = label.toLocaleString();
         }
